@@ -1,0 +1,102 @@
+<!-- Validation failure messages -->
+
+<% if @member.errors.any? %>
+  <% @member.errors.full_messages.each do |message| %>
+    <div class="alert alert-dismissable alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <%= message %>
+    </div>
+  <% end %>
+<% end %>
+
+<!-- Responsive panel example -->
+
+<div class="row">
+  <div class="col-lg-offset-1 col-lg-10">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Add Member</h3>
+      </div>
+      <div class="panel-body">
+        <form action="/create_member" method="post" class="form-horizontal">
+          <!-- Hidden input for authenticity token to protect from forgery -->
+          <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+
+          <!-- Label and input for Name -->
+          <div class="form-group">
+            <label for="name" class="col-lg-2 control-label">
+              Name
+            </label>
+            <div class="col-lg-10">
+              <input type="string" id="name" name="name" placeholder="e.g., John Smith" class="form-control">
+            </div>
+          </div>
+
+          <!-- Label and input for Organization -->
+          <div class="form-group">
+            <label for="organization" class="col-lg-2 control-label">
+              Organization
+            </label>
+            <div class="col-lg-10">
+              <input type="string" id="organization" name="organization" placeholder="e.g., Children's Brittle Bone Foundation" class="form-control" >
+            </div>
+          </div>
+
+          <!-- Label and input for Image -->
+          <div class="form-group">
+            <label for="image" class="col-lg-2 control-label">
+              Image
+            </label>
+            <div class="col-lg-10">
+              <input type="string" id="image" name="image" placeholder="e.g., www.images.com/image.jpg" class="form-control">
+            </div>
+          </div>
+
+          <!-- Label and input for Position -->
+          <div class="form-group">
+            <label for="position" class="col-lg-2 control-label">
+              Position
+            </label>
+            <div class="col-lg-10">
+              <input type="string" id="position" name="position" placeholder="e.g., President" class="form-control">
+            </div>
+          </div>
+          
+          <!-- Label and input for Sequence -->
+          <div class="form-group">
+            <label for="position" class="col-lg-2 control-label">
+              Sequence
+            </label>
+            <div class="col-lg-4">
+              <input type="integer" id="sequence" name="sequence" placeholder="e.g., 12" class="form-control">
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="form-group">
+                <label for="active">
+                  Active?
+                </label>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-1">
+                      <input type="checkbox" id="active" name="active" class="form-control" value="true"><br>
+                </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-lg-offset-2 col-lg-10">
+              <button class="btn btn-success">
+                Create Member
+              </button>
+              or
+              <a href="/members">Cancel</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,631 @@
+
+.cbbf-big-icon {
+  color: #7bc5ff !important;
+  font-size: 56px !important;
+}
+
+
+ .cbbf-navbar-default.cbbf-navbar-scroll {
+  background-color: #fff;
+  border-color: #fff;
+  padding: 15px 0;
+}
+
+/* line 95, app/assets/stylesheets/base/landing.scss */
+ .cbbf-navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+/* line 100, app/assets/stylesheets/base/landing.scss */
+ .cbbf-navbar-default .nav li a {
+  color: #fff;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* line 108, app/assets/stylesheets/base/landing.scss */
+ .navbar-nav > li > a {
+  padding-top: 25px;
+  border-top: 6px solid transparent;
+}
+
+/* line 112, app/assets/stylesheets/base/landing.scss */
+ .cbbf-navbar-default .navbar-nav > .active > a,
+ .cbbf-navbar-default .navbar-nav > .active > a:hover {
+  background: transparent;
+  color: #fff;
+  border-top: 6px solid #7bc5ff;
+}
+
+/* line 118, app/assets/stylesheets/base/landing.scss */
+ .cbbf-navbar-default .navbar-nav > li > a:hover,
+ .cbbf-navbar-default .navbar-nav > li > a:focus {
+  color: #86c9fe;
+  background: inherit;
+}
+
+/* line 123, app/assets/stylesheets/base/landing.scss */
+ .cbbf-navbar-default .navbar-nav > .active > a:focus {
+  background: transparent;
+  color: #fff;
+}
+
+/* line 128, app/assets/stylesheets/base/landing.scss */
+ .cbbf-navbar-default .navbar-nav > .active > a:focus {
+  background: transparent;
+  color: #ffffff;
+}
+
+/* line 133, app/assets/stylesheets/base/landing.scss */
+ .cbbf-navbar-default.cbbf-navbar-scroll .navbar-nav > .active > a:focus {
+  background: transparent;
+  color: inherit;
+}
+
+/* line 137, app/assets/stylesheets/base/landing.scss */
+ .cbbf-navbar-default .navbar-brand:hover,
+ .cbbf-navbar-default .navbar-brand:focus {
+  background: #179d82;
+  color: #fff;
+}
+
+ .cbbf-navbar-default .navbar-brand {
+  color: #fff;
+  height: auto;
+  display: block;
+  font-size: 14px;
+  background: #1ab394;
+  padding: 15px 20px 15px 20px;
+  border-radius: 0 0 5px 5px;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out 0s;
+  margin-top: -16px;
+}
+
+ .cbbf-navbar-scroll.cbbf-navbar-default .nav li a {
+  color: #676a6c;
+}
+
+/* line 157, app/assets/stylesheets/base/landing.scss */
+ .cbbf-navbar-scroll.cbbf-navbar-default .nav li a:hover {
+  color: #86c9fe;
+}
+
+/* line 160, app/assets/stylesheets/base/landing.scss */
+ .navbar-wrapper .navbar.cbbf-navbar-scroll {
+  padding-top: 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e7eaec;
+  border-radius: 0;
+}
+
+/* line 167, app/assets/stylesheets/base/landing.scss */
+ .nav.navbar-right {
+  flex-direction: row;
+}
+
+/* line 171, app/assets/stylesheets/base/landing.scss */
+ .nav > li.active {
+  border: none;
+  background: inherit;
+}
+
+/* line 176, app/assets/stylesheets/base/landing.scss */
+ .nav > li > a {
+  padding: 25px 10px 15px 10px;
+}
+
+/* line 179, app/assets/stylesheets/base/landing.scss */
+ .cbbf-navbar-scroll .navbar-nav > li > a {
+  padding: 20px 10px;
+}
+
+/* line 183, app/assets/stylesheets/base/landing.scss */
+ .cbbf-navbar-default .navbar-nav > li .nav-link.active,
+ .cbbf-navbar-default .navbar-nav > li .nav-link.active:hover {
+  border-top: 6px solid #7bc5ff;
+}
+
+/* line 188, app/assets/stylesheets/base/landing.scss */
+ .navbar-fixed-top {
+  border: none !important;
+}
+
+/* line 192, app/assets/stylesheets/base/landing.scss */
+ .navbar-fixed-top.cbbf-navbar-scroll {
+  border-bottom: 1px solid #e7eaec !important;
+}
+
+/* line 196, app/assets/stylesheets/base/landing.scss */
+ .navbar.cbbf-navbar-scroll .navbar-brand {
+  margin-top: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 10px;
+  height: auto;
+}
+
+
+ .cbbf-blue-line {
+  width: 60px;
+  height: 1px;
+  margin: 60px auto 0;
+  border-bottom: 2px solid #7bc5ff;
+}
+
+
+.btn-cbbf-blue {
+  color: #fff;
+  background-color: #7bc5ff;
+  border-color: #7bc5ff;
+}
+
+.btn-cbbf-blue:hover {
+  color: #fff;
+  background-color: #4caffd;
+  border-color: #58b3fb;
+}
+
+.btn-cbbf-blue:focus, .btn-cbbf-blue.focus {
+  box-shadow: 0 0 0 0.2rem rgba(231, 133, 40, 0.5);
+}
+
+.btn-cbbf-blue.disabled, .btn-cbbf-blue:disabled {
+  color: #fff;
+  background-color: #7bc5ff;
+  border-color: #7bc5ff;
+}
+
+.btn-cbbf-blue:not(:disabled):not(.disabled):active, .btn-cbbf-blue:not(:disabled):not(.disabled).active,
+.show > .btn-cbbf-blue.dropdown-toggle {
+  color: #fff;
+  background-color: #58b3fb;
+  border-color: #86c9fe;
+}
+
+.btn-cbbf-blue:not(:disabled):not(.disabled):active:focus, .btn-cbbf-blue:not(:disabled):not(.disabled).active:focus,
+.show > .btn-cbbf-blue.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(231, 133, 40, 0.5);
+}
+
+
+.btn-cbbf-gray {
+  color: #fff;
+  background-color: #424a4d;
+  border-color: #424a4d;
+}
+
+.btn-cbbf-gray:hover {
+  color: #fff;
+  background-color: #303436;
+  border-color: #383f42;
+}
+
+.btn-cbbf-gray:focus, .btn-cbbf-gray.focus {
+  box-shadow: 0 0 0 0.2rem rgba(66, 74, 77, 0.5);
+}
+
+.btn-cbbf-gray.disabled, .btn-cbbf-gray:disabled {
+  color: #fff;
+  background-color: #424a4d;
+  border-color: #424a4d;
+}
+
+.btn-cbbf-gray:not(:disabled):not(.disabled):active, .btn-cbbf-gray:not(:disabled):not(.disabled).active,
+.show > .btn-cbbf-gray.dropdown-toggle {
+  color: #fff;
+  background-color: #383f42;
+  border-color: #495559;
+}
+
+.btn-black:not(:disabled):not(.disabled):active:focus, .btn-black:not(:disabled):not(.disabled).active:focus,
+.show > .btn-black.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(66, 74, 77, 0.5);
+}
+
+
+
+ .pricing-plan-cbbf-blue li.pricing-title-cbbf-blue {
+  background: #7bc5ff;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 4px 4px 0 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+ .pricing-plan-cbbf-blue li.pricing-title-cbbf-gray {
+  background: #424a4d;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 4px 4px 0 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+ .social-icon-cbbf-blue a {
+  background: #7bc5ff;
+  color: #FFFFFF;
+  padding: 4px 8px;
+  height: 28px;
+  width: 28px;
+  display: block;
+  border-radius: 50px;
+}
+
+ .social-icon-cbbf-blue a:hover {
+  background: #4caffd;
+}
+
+ .social-icon-cbbf-gray a {
+  background: #424a4d;
+  color: #fff;
+  padding: 4px 8px;
+  height: 28px;
+  width: 28px;
+  display: block;
+  border-radius: 50px;
+}
+
+ .social-icon-cbbf-gray a:hover {
+  background: #303436;
+}
+
+ .cbbf-header-back {
+  height: 470px;
+  width: 100%;
+}
+
+ .cbbf-header-back.three {
+  background: url(/assets/landing/header_three-476f1ebff251e6e23ea07e6e301f8d4e5ceecd6b7fb33d82a7c97799f66450ce.jpg) 100% 0 no-repeat;
+}
+
+ .cbbf-header-back.four {
+  background: url(/assets/landing/header_four-c5831b81a5cd092276b16f0484acb7501a012f4d660d9da26f7019cfe584395c.jpg) 100% 0 no-repeat;
+}
+
+ .cbbf-header-back.five {
+  background: url(/assets/landing/header_five_gray-0c8e0acb9d7018eea29a783e3e1891e1cb5b8389095b7668dc45efa483775f0f.jpg) 100% 0 no-repeat;
+}
+
+ .cbbf-text-blue {
+  color: #7bc5ff;
+}
+
+ .header-block-cbbf-blue h2 {
+  font-size: 20px;
+  letter-spacing: -1px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #7bc5ff;
+  text-align: center;
+}
+
+/* line 462, app/assets/stylesheets/base/landing.scss */
+ .cbbf-bubble {
+  position: relative;
+  padding: 20px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* line 474, app/assets/stylesheets/base/landing.scss */
+ .cbbf-bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 14px 0;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -15px;
+  left: 30px;
+}
+
+
+ .cbbf-blue-bg, .bg-cbbf-blue {
+  background-color: #7bc5ff !important;
+  color: #ffffff;
+  height:210px;
+}
+
+
+ .pricing-plan-cbbf-blue {
+  margin: 20px 30px 0 30px;
+  border-radius: 4px;
+}
+
+/* line 391, app/assets/stylesheets/base/landing.scss */
+ .pricing-plan-cbbf-blue.selected {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #f4f4f4;
+}
+
+/* line 395, app/assets/stylesheets/base/landing.scss */
+ .pricing-plan-cbbf-blue li {
+  padding: 10px 16px;
+  border-top: 1px solid #e7eaec;
+  text-align: center;
+  color: #aeaeae;
+}
+
+/* line 401, app/assets/stylesheets/base/landing.scss */
+ .pricing-plan-cbbf-blue .pricing-price span {
+  font-weight: 700;
+  color: #7bc5ff;
+}
+
+/* line 361, app/assets/stylesheets/base/landing.scss */
+ .cbbf-gray-section {
+  background: #f4f4f4;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+
+ .cbbf-carousel-caption {
+  position: absolute;
+  top: 250px;
+  left: 250px;
+  bottom: auto;
+  right: auto;
+  text-align: left;
+  color:white;
+}
+
+ .cbbf-carousel-caption .cbbf-carousel-category {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 45px;
+  text-shadow: none;
+  letter-spacing: -1.5px;
+  z-index: 90000;
+}
+
+ .cbbf-carousel-caption .cbbf-carousel-subcategory {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 32px;
+  text-shadow: none;
+  letter-spacing: -1.5px;
+  padding-left: 10px;
+  z-index: 90000;
+}
+
+ .quote-modal-box {
+  position: absolute;
+  
+  background: rgba(0, 0, 0, 0.7);
+  width:100%;
+  height: 100%;
+  z-index: 10;
+}
+
+ .quote-modal-text {
+  
+  opacity: 1;
+  color: white;
+  padding-top: 15%;
+  text-align: center;  
+  font-weight: 700;
+  font-size: 45px;
+  text-shadow: none;
+  letter-spacing: -1.5px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+
+/* line 184, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/bootstrap-4.1.3/assets/stylesheets/bootstrap/_carousel.scss */
+.carousel-indicators li {
+  position: relative;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 196, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/bootstrap-4.1.3/assets/stylesheets/bootstrap/_carousel.scss */
+.carousel-indicators li::before {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  content: "";
+}
+
+/* line 205, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/bootstrap-4.1.3/assets/stylesheets/bootstrap/_carousel.scss */
+.carousel-indicators li::after {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  content: "";
+}
+
+/* line 216, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/bootstrap-4.1.3/assets/stylesheets/bootstrap/_carousel.scss */
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+/* line 226, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/bootstrap-4.1.3/assets/stylesheets/bootstrap/_carousel.scss */
+.cbbf-caption-overlay {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 4;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+/*Dropdown Menu Detail*/
+
+.cbbf-dropdown {
+  margin-top: 17px;
+  float: left;
+  overflow: hidden;
+}
+
+.cbbf-dropdown .cbbf-dropbtn {  
+  border: none;
+  outline: none;
+  color: white;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.cbbf-dropdown .cbbf-dropbtn:hover {  
+  color: #86c9fe;
+}
+
+
+.cbbf-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-weight: 700;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.cbbf-dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.cbbf-dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.cbbf-dropdown:hover .cbbf-dropdown-content {
+  display: block;
+}
+
+
+ .cbbf-navbar-scroll.cbbf-dropbtn {
+  color: #676a6c;
+  padding-top: 9px;
+}
+
+/* line 157, app/assets/stylesheets/base/landing.scss */
+ .cbbf-navbar-scroll.cbbf-dropbtn:hover {
+  color: #86c9fe;
+}
+
+
+/* line 137, app/assets/stylesheets/base/landing.scss */
+.landing-page .cbbf-navbar-default .navbar-brand-cbbf-blue:hover,
+.landing-page .cbbf-navbar-default .navbar-brand-cbbf-blue:focus {
+  background: #a2d6ff;
+  color: #fff;
+}
+
+/* line 142, app/assets/stylesheets/base/landing.scss */
+.landing-page .cbbf-navbar-default .navbar-brand-cbbf-blue {
+  color: #fff;
+  height: auto;
+  display: block;
+  font-size: 14px;
+  background: #48afff;
+  padding: 15px 20px 15px 20px;
+  border-radius: 0 0 5px 5px;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out 0s;
+  margin-top: -16px;
+}
+
+/* line 196, app/assets/stylesheets/base/landing.scss */
+.landing-page .navbar.cbbf-navbar-scroll .navbar-brand-cbbf-blue {
+  margin-top: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 10px;
+  height: auto;
+}
+
+  /* line 586, app/assets/stylesheets/base/landing.scss */
+  .landing-page .navbar.cbbf-navbar-scroll .navbar-brand-cbbf-blue {
+    margin-top: 6px;
+  }
+
+/*Timeline*/
+
+.timeline-sun {
+  background: url(/assets/landing/header_five_gray-0c8e0acb9d7018eea29a783e3e1891e1cb5b8389095b7668dc45efa483775f0f.jpg) 100% 0 no-repeat;
+}
+
+.timeline-vertical { 
+  background-color: #7bc5ff;
+  width: 3px;
+  height: 100px;
+  margin-left: 50%
+}
+.timeline-bar { 
+  background-color: #7bc5ff;
+  height: 3px; 
+  margin-left: 7.5%;
+  width:90.5%;
+}
+
+.timeline-box { 
+  border: solid #7bc5ff;
+  text-align: center;
+  border-width: 5px;
+  border-radius: 10px;
+  padding-top: 10px;
+  width: 100%;
+}

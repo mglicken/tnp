@@ -1,0 +1,130 @@
+<div class="navbar-wrapper">
+    <nav class="navbar cbbf-navbar-default navbar-fixed-top navbar-expand-md" role="navigation">
+        <div class="container">
+            <a href="<%= url_for :controller => 'landing', :action => 'index' %>"><img id="logo" src="/assets/landing/cbbf_logo_white_text-7d38356f13774df7857c2d9d56b9a941bc09f783650435285f14579a83577a24.png" style="height:50px; margin-right:50px"/></a>
+
+            <div class="navbar-header page-scroll">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                <ul class="nav navbar-nav navbar-right mr-auto">
+                    <li><a class="nav-link" href="/">Home</a></li>
+                    <div class="cbbf-dropdown">
+                        <button class="cbbf-dropbtn" id="dropdown-button-1">About Us 
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="cbbf-dropdown-content">
+                            <a href="/about_us">Our Mission</a>
+                            <a href="/board">Board of Directors</a>
+                            <a href="/photos">Photos</a>
+                            <a href="/newsletter">Newsletter</a>
+                            <a href="/contact_us">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="cbbf-dropdown">
+                        <button class="cbbf-dropbtn" id="dropdown-button-2">Research & Grants 
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="cbbf-dropdown-content">
+                            <a href="/impact_grants">Jeanie Coleman Impact Grants</a>
+                            <a href="/bbdc">Brittle Bone Disorders Consortium (BBDC)</a>
+                            <a href="/research">Research Grants & Fellowships</a>
+                            <a href="/oif">OI Foundation (OIF)</a>
+                        </div>
+                    </div>
+                    <div class="cbbf-dropdown">
+                        <button class="cbbf-dropbtn" id="dropdown-button-3">Fundraising & Volunteering
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="cbbf-dropdown-content">
+                            <a href="/golf_outing">Annual Golf Outing & Food Classic</a>
+                            <a href="/card_game">Ladie's Card Game Day</a>
+                            <a href="/auction">Annual Live Auction Event</a>
+                            <a href="/amazon"><i class="fa fa-amazon"></i>mazonSmile</a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="navbar-brand-cbbf-blue" data-toggle="modal" data-target="#Donate"><span style="margin-top: 50px"><br>DONATE</span></a>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<%= render('shared/donate_modal')%>
+<script type="text/javascript">
+
+
+$(function() {
+
+    $('body').addClass('landing-page');
+    $('body').attr('id', 'page-top');
+
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 80
+    });
+
+    // Page scrolling feature
+    $('a.page-scroll').bind('click', function(event) {
+        var link = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(link.attr('href')).offset().top - 50
+        }, 500);
+        event.preventDefault();
+        $("#navbar").collapse('hide');
+    });
+
+    var cbpAnimatedHeader = (function() {
+        var docElem = document.documentElement,
+                header = document.querySelector( '.cbbf-navbar-default' ),
+                button_1 = document.querySelector( '#dropdown-button-1' ),
+                button_2 = document.querySelector( '#dropdown-button-2' ),
+                button_3 = document.querySelector( '#dropdown-button-3' ),
+                didScroll = false,
+                changeHeaderOn = 200;
+        function init() {
+            window.addEventListener( 'scroll', function( event ) {
+                if( !didScroll ) {
+                    didScroll = true;
+                    setTimeout( scrollPage, 250 );
+                }
+            }, false );
+        }
+        function scrollPage() {
+            var sy = scrollY();
+            if ( sy >= changeHeaderOn ) {
+                $(header).addClass('cbbf-navbar-scroll');
+                $(button_1).addClass('cbbf-navbar-scroll');
+                $(button_2).addClass('cbbf-navbar-scroll');
+                $(button_3).addClass('cbbf-navbar-scroll');
+                $('#logo').attr("src","/assets/landing/cbbf-logo-03b2b2c5b58a4e9b23a2c35baa478e8c810f2d64ad8175568f1da1f604f07639.png");
+            }
+            else {
+                $(header).removeClass('cbbf-navbar-scroll');
+                $(button_1).removeClass('cbbf-navbar-scroll');
+                $(button_2).removeClass('cbbf-navbar-scroll');
+                $(button_3).removeClass('cbbf-navbar-scroll');
+                $('#logo').attr("src","/assets/landing/cbbf_logo_white_text-7d38356f13774df7857c2d9d56b9a941bc09f783650435285f14579a83577a24.png");
+            }
+            didScroll = false;
+        }
+        function scrollY() {
+            return window.pageYOffset || docElem.scrollTop;
+        }
+        init();
+
+    })();
+
+
+    // Activate WOW.js plugin for animation on scrol
+    new WOW().init();
+
+
+});
+
+</script>
+
+

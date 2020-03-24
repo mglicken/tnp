@@ -1,0 +1,130 @@
+Started GET "/" for ::1 at 2019-09-25 16:07:50 -0500
+Processing by DashboardsController#dashboard_1 as HTML
+  Rendering dashboards/dashboard_1.html.erb within layouts/application
+Started GET "/" for ::1 at 2019-09-25 16:08:34 -0500
+Processing by DashboardsController#dashboard_1 as HTML
+  Rendering dashboards/dashboard_1.html.erb within layouts/application
+  Rendered dashboards/dashboard_1.html.erb within layouts/application (19336.9ms)
+Completed 500 Internal Server Error in 19858ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error ():
+    202: 
+    203:                                 <div class="feed-element">
+    204:                                     <a class="float-left" href="<%= url_for :controller => 'appviews', :action => 'profile' %>">
+    205:                                         <img alt="image" class="rounded-circle" src="<%= image_path('profile.jpg') %>">
+    206:                                     </a>
+    207: 
+    208:                                     <div class="media-body ">
+  
+(execjs):1
+app/views/dashboards/dashboard_1.html.erb:205:in `_app_views_dashboards_dashboard___html_erb__969482300_106962260'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ C:/Ruby24-x64/bin/rake:23
+  [1m[35m (31.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ C:/Ruby24-x64/bin/rake:23
+  [1m[35m (19.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ C:/Ruby24-x64/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ C:/Ruby24-x64/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/Ruby24-x64/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (1.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-25 21:11:56.854276"], ["updated_at", "2019-09-25 21:11:56.854276"]]
+  ↳ C:/Ruby24-x64/bin/rake:23
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/Ruby24-x64/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby24-x64/bin/rake:23
+Started GET "/" for ::1 at 2019-09-25 16:13:16 -0500
+Processing by DashboardsController#dashboard_1 as HTML
+  Rendering dashboards/dashboard_1.html.erb within layouts/application
+  Rendered dashboards/dashboard_1.html.erb within layouts/application (100446.9ms)
+  Rendered layouts/_skinconfig.html.erb (1.4ms)
+  Rendered layouts/_navigation.html.erb (33.1ms)
+  Rendered layouts/_topnavbar.html.erb (4.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+  Rendered layouts/_rightsidebar.html.erb (30.6ms)
+Completed 200 OK in 105260ms (Views: 105111.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-25 16:17:48 -0500
+Processing by DashboardsController#dashboard_1 as HTML
+  Rendering dashboards/dashboard_1.html.erb within layouts/application
+  Rendered dashboards/dashboard_1.html.erb within layouts/application (97.5ms)
+  Rendered layouts/_skinconfig.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (20.5ms)
+  Rendered layouts/_topnavbar.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered layouts/_rightsidebar.html.erb (60.8ms)
+Completed 200 OK in 2004ms (Views: 1942.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-25 16:18:35 -0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/empty
+  Rendered landing/index.html.erb within layouts/empty (98.9ms)
+Completed 200 OK in 1139ms (Views: 1138.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-26 14:10:40 -0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/empty
+  Rendered landing/index.html.erb within layouts/empty (372.1ms)
+Completed 200 OK in 1982ms (Views: 1979.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-26 14:12:23 -0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/empty
+  Rendered landing/index.html.erb within layouts/empty (93.2ms)
+Completed 200 OK in 1492ms (Views: 1491.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-26 14:14:51 -0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/empty
+  Rendered landing/index.html.erb within layouts/empty (81.5ms)
+Completed 200 OK in 1089ms (Views: 1088.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-26 14:16:32 -0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/empty
+  Rendered landing/index.html.erb within layouts/empty (93.1ms)
+Completed 200 OK in 1406ms (Views: 1405.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-26 14:19:39 -0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/empty
+  Rendered landing/index.html.erb within layouts/empty (37.8ms)
+Completed 200 OK in 979ms (Views: 977.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-26 14:21:44 -0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/empty
+  Rendered landing/index.html.erb within layouts/empty (70.3ms)
+Completed 200 OK in 1221ms (Views: 1219.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-26 14:23:00 -0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/empty
+  Rendered landing/index.html.erb within layouts/empty (202.5ms)
+Completed 200 OK in 1027ms (Views: 1025.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboards/dashboard_1" for ::1 at 2019-09-26 14:49:54 -0500
+Processing by DashboardsController#dashboard_1 as HTML
+  Rendering dashboards/dashboard_1.html.erb within layouts/application
+  Rendered dashboards/dashboard_1.html.erb within layouts/application (188.9ms)
+  Rendered layouts/_skinconfig.html.erb (2.8ms)
+  Rendered layouts/_navigation.html.erb (37.3ms)
+  Rendered layouts/_topnavbar.html.erb (6.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered layouts/_rightsidebar.html.erb (73.7ms)
+Completed 200 OK in 4322ms (Views: 4113.3ms | ActiveRecord: 0.0ms)
+
+

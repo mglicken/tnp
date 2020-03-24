@@ -1,0 +1,60 @@
+
+
+
+<div id="inSlider" class="carousel slide" data-ride="carousel" >
+<div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+        <div class="container">
+            <div class="carousel-caption">
+                <h1 style="padding-left: 170px; font-size: 80px">Board of Directors<br/>
+                <p>
+                </p>
+            </div>
+        </div>
+        <!-- Set background for slide in css -->
+        <div class="cbbf-header-back three"></div>
+
+    </div>
+</div>
+</div>
+
+
+<br>
+<br>
+<section class="features">
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <% @members.each do |member| %>
+                        <div class="col-lg-3">
+                            <div class="ibox">
+                                <div class="ibox-content product-box">
+                                      <a href="/members/<%= member.id %>">
+                                        <!-- Make Height 225px if want to look right, need to make it clip -->
+                                        <img src="<%= member.image %>" width = 100%>
+                                      
+                                      </a>
+                                    <div class="product-desc" style="font-size: 15px">
+                                        <% if member.position.present? %>
+                                            <span class="product-price">
+                                                <%= member.position %>
+                                            </span>
+                                        <% end %>
+                                        <strong><%=member.name %></strong><br>
+                                        <span class="text-muted"><%=member.organization %></span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <%end%>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

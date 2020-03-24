@@ -1,0 +1,36 @@
+<br>
+<div class="row">
+  <div class="col-lg-offset-1 col-lg-10 col-md-offset-2 col-md-8">
+    <div class="ibox-content">
+        <h3 class="ibox-title"> <%= @member.name %> (Member# <%= @member.id %>)</h3>
+      <div class="ibox-body">
+        <div class="row">
+          <div class="col-lg-12">
+
+
+              <strong>Organization: </strong>
+              <%= @member.organization %><br>
+
+              <strong>Image: </strong>
+              <%= @member.image %><br>
+
+              <strong>Position: </strong>
+              <%= @member.position %><br>
+                 
+            <div class="btn-group btn-group-justified">
+              <a href="/members/<%= @member.id %>" class="btn btn-primary">
+                <i class="fa fa-reply"></i>
+              </a>
+
+              <a href="/members/<%= @member.id %>/edit" class="btn btn-warning">
+                <i class="fa fa-edit"></i>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
